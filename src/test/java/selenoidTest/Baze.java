@@ -24,10 +24,9 @@ public class Baze {
         options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
         System.setProperty("webdriver.chrome.driver","C:\\ggr tool\\selenoid\\chromedriver.exe");
         driver = new ChromeDriver(options);
-
         DesiredCapabilities dc = DesiredCapabilities.chrome();
         dc.setCapability(ChromeOptions.CAPABILITY, options);
-
+     int i=32;
         URL hub = null;
         try {
             hub = new URL(ggrUrl + "/wd/hub");
